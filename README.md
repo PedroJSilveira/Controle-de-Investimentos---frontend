@@ -21,4 +21,6 @@ linux
   cd telas
   xdg-open index.html
 ```
+
+Também é possível iniciar front-end utilizando a extensão liveserver do vscode ou abrindo diretamente o index.html na pasta.
     
