@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Investimento</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="flexHeader">
+        <a href="index.html">Cadastrar Investimento</a>
+        <a href="listagem.html">Listar Investimentos</a>
+    </header>
+
+    <div class="divBody">
+        <h1>Listar Investimentos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="investimentosTabela"></tbody>
+        </table>
+        <div>
+            <canvas id="graficoInvestimentos" ></canvas>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../javaScript/grafico.js"></script>
+    <script src="../javaScript/main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Investimentos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="flexHeader">
+            <a href="index.html">Cadastrar Investimento</a>
+            <a href="listagem.html">Listar Investimentos</a>
+    </header>
+
+    <div class="divBody">
+        <h1>Cadastrar Investimento</h1>
+        <form id="investimentoForm">
+            <label for="nomeInvestimento" id="nomeInvestimento">Nome do Investimento</label>
+            <input type="text" name="nomeInvestimento" id="nomeInvestimentoInp" placeholder="ex.: Fundo X, Ação Y" required>
+            
+            <label for="tipoInvestimento" id="tipoInvestimento">Tipo do Investimento</label>
+            <input type="text" name="tipoInvestimento" id="tipoInvestimentoInp" placeholder="ex.: Ação, Fundo, Título" required>
+            
+            <label for="valorInvestimento" id="valorInvestimento">Valor Investido</label>
+            <input type="text" name="valorInvestimento" id="valorInvestimentoInp" placeholder="R$ 00.000,00" onInput="mascaraMoeda(event);" required>
+            
+            <label for="dataInvestimento" id="dataInvestimento">Data do Investimento</label>
+            <input type="date" name="dataInvestimento" id="dataInvestimentoInp" required>
+            
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </div>
+
+    <script src="../javaScript/main.js"></script>
+</body>
+</html>
